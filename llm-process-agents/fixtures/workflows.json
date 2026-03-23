@@ -1,0 +1,35 @@
+[
+  {
+    "id": "support-triage",
+    "name": "Support triage",
+    "steps": [
+      { "id": "classify", "tool": "ticketClassifier" },
+      { "id": "search", "tool": "knowledgeSearch" },
+      { "id": "assign", "tool": "assignTeam" }
+    ]
+  },
+  {
+    "id": "lead-qualification",
+    "name": "Lead qualification",
+    "steps": [
+      { "id": "score", "tool": "leadScorer" },
+      { "id": "route", "tool": "routeLead" }
+    ]
+  },
+  {
+    "id": "weekly-report",
+    "name": "Weekly report",
+    "steps": [
+      { "id": "collect", "tool": "metricsReporter" },
+      { "id": "generate", "tool": "generateSummary" }
+    ]
+  },
+  {
+    "id": "compliance-review",
+    "name": "Compliance review",
+    "steps": [
+      { "id": "review", "tool": "complianceReview" },
+      { "id": "notify", "tool": "emailNotifier" }
+    ]
+  }
+]

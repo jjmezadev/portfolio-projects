@@ -1,0 +1,20 @@
+{
+  "tenants": [
+    {
+      "id": "tenant-acme",
+      "name": "Acme Retail",
+      "plan": "pro",
+      "apiKeys": ["acme-key-001"],
+      "rateLimitPerMinute": 3,
+      "allowedEndpoints": ["/users", "/payments", "/orders"]
+    },
+    {
+      "id": "tenant-northwind",
+      "name": "Northwind Logistics",
+      "plan": "free",
+      "apiKeys": ["northwind-key-001"],
+      "rateLimitPerMinute": 2,
+      "allowedEndpoints": ["/tracking", "/shipments"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "fileName": "invoice-april.txt",
+    "content": "Invoice\nVendor: Acme Cloud\nInvoice Number: INV-100\nDate: 2026-03-20\nTotal: 4200\nTax: 798\n"
+  },
+  {
+    "fileName": "msa-contract.txt",
+    "content": "Contract\nParty A: Acme Cloud\nParty B: Northwind Retail\nStart Date: 2026-04-01\nEnd Date: 2027-03-31\nContract Value: 120000\nKey Clause: data residency in Colombia\n"
+  },
+  {
+    "fileName": "lead-form.txt",
+    "content": "Application Form\nApplicant: Laura Gomez\nRequest Type: enterprise onboarding\nSubmitted At: 2026-03-21\nRegion: LATAM\n"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "doc-cloudrun-rollback",
+    "title": "Cloud Run rollback playbook",
+    "source": "confluence://platform/cloud-run-rollback",
+    "updatedAt": "2026-03-01T10:00:00Z",
+    "content": "When a deployment fails in production, rollback the Cloud Run service to the previous stable revision. Validate health checks, inspect error budgets, and notify the on-call engineer in Slack. Escalate security incidents to security@acme.internal."
+  },
+  {
+    "id": "doc-support-sla",
+    "title": "Enterprise support SLA",
+    "source": "slack://support/sla",
+    "updatedAt": "2026-02-24T09:00:00Z",
+    "content": "Enterprise tickets with payment, security, or outage keywords must be acknowledged within 15 minutes. Route API outages to the platform team and attach the latest runbook."
+  },
+  {
+    "id": "doc-incident-policy",
+    "title": "Incident response policy",
+    "source": "pdf://incident-policy-v4.pdf",
+    "updatedAt": "2026-01-15T18:30:00Z",
+    "content": "Never share personal data or raw credentials in chat responses. If a query requests customer emails, access tokens, or card numbers, the assistant must refuse and escalate."
+  },
+  {
+    "id": "doc-billing-faq",
+    "title": "Billing FAQ",
+    "source": "faq://billing",
+    "updatedAt": "2026-03-10T12:45:00Z",
+    "content": "Refund requests are processed in three business days. Usage-based invoices show token usage, cached answers, and model provider cost breakdowns."
+  }
+]
