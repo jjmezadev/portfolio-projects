@@ -1,0 +1,34 @@
+openapi: 3.1.0
+info:
+  title: Multitenant API Analytics API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /simulate-request:
+    post:
+      summary: Simulate gateway traffic through the platform
+      responses:
+        '200':
+          description: Simulated gateway response
+  /tenants/{tenantId}/analytics:
+    get:
+      summary: Read analytics for one tenant
+      parameters:
+        - name: tenantId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: viewer
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Tenant metrics and insights

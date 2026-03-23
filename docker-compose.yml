@@ -1,0 +1,40 @@
+services:
+  enterprise-rag-guardrails:
+    build:
+      context: ./enterprise-rag-guardrails
+    env_file:
+      - ./enterprise-rag-guardrails/.env.example
+    ports:
+      - '4011:4011'
+
+  data-quality-observability:
+    build:
+      context: ./data-quality-observability
+    env_file:
+      - ./data-quality-observability/.env.example
+    ports:
+      - '4012:4012'
+
+  intelligent-document-processing:
+    build:
+      context: ./intelligent-document-processing
+    env_file:
+      - ./intelligent-document-processing/.env.example
+    ports:
+      - '4013:4013'
+
+  multitenant-api-analytics:
+    build:
+      context: ./multitenant-api-analytics
+    env_file:
+      - ./multitenant-api-analytics/.env.example
+    ports:
+      - '4014:4014'
+
+  llm-process-agents:
+    build:
+      context: ./llm-process-agents
+    env_file:
+      - ./llm-process-agents/.env.example
+    ports:
+      - '4015:4015'

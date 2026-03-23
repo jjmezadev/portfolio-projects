@@ -40,6 +40,33 @@ Muchas operaciones de soporte, ventas, compliance y reporting siguen reglas repe
 
 `TypeScript` `Next.js` `React Flow` `Redis` `PostgreSQL` `Pub/Sub` `OpenTelemetry` `Terraform`
 
+## Implementación incluida en este repo
+
+- servicio HTTP en `src/server.mjs`
+- runtime y tool registry en `src/automation-platform.mjs`
+- catálogo de workflows en `fixtures/workflows.json`
+- pruebas en `test/automation-platform.test.mjs`
+- OpenAPI en `docs/api/openapi.yaml`
+- configuración demo en `.env.example`
+
+## Endpoints
+
+- `GET /health`
+- `GET /workflows`
+- `POST /workflows/run/:workflowId`
+
+## Credenciales demo
+
+- `OPENAI_API_KEY=sk-demo-agents-0001`
+- `SLACK_BOT_TOKEN=xoxb-demo-agents-0001`
+- `GOOGLE_CALENDAR_SERVICE_ACCOUNT=agents-calendar-demo@example.iam.gserviceaccount.com`
+
+## Ejecución
+
+```bash
+npm run agents:start
+```
+
 ## Resultado esperado en portafolio
 
 Proyecto diferenciador para LLMs/IA y software, porque combina agentes, herramientas, seguridad operativa y producto.

@@ -41,6 +41,33 @@ Muchos equipos necesitan un API gateway con mejores insights de negocio y operac
 
 `Fastify` `TypeScript` `Redis` `PostgreSQL` `BigQuery` `Pub/Sub` `Terraform` `GitHub Actions`
 
+## Implementación incluida en este repo
+
+- servicio HTTP en `src/server.mjs`
+- gateway y analytics core en `src/gateway-platform.mjs`
+- tenants demo en `fixtures/tenants.json`
+- pruebas en `test/gateway-platform.test.mjs`
+- OpenAPI en `docs/api/openapi.yaml`
+- configuración demo en `.env.example`
+
+## Endpoints
+
+- `GET /health`
+- `POST /simulate-request`
+- `GET /tenants/:tenantId/analytics?viewer=:tenantId`
+
+## Credenciales demo
+
+- `ADMIN_API_KEY=demo-admin-key-analytics`
+- `POSTGRES_DSN=postgres://gateway_demo_user:gateway_demo_password@demo-postgres.internal:5432/gateway_platform`
+- `REDIS_URL=redis://gateway_cache_user:gateway_cache_password@demo-redis.internal:6379/2`
+
+## Ejecución
+
+```bash
+npm run gateway:start
+```
+
 ## Resultado esperado en portafolio
 
 Proyecto principal para nube y arquitectura, y un excelente showcase de producto SaaS, backend y operaciones.

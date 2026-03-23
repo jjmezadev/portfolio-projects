@@ -1,0 +1,35 @@
+openapi: 3.1.0
+info:
+  title: Intelligent Document Processing API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /samples:
+    get:
+      summary: List built-in sample documents
+      responses:
+        '200':
+          description: Available demo samples
+  /process:
+    post:
+      summary: Process one document payload
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [fileName, content]
+              properties:
+                fileName:
+                  type: string
+                content:
+                  type: string
+      responses:
+        '200':
+          description: Classification, extraction and routing decision

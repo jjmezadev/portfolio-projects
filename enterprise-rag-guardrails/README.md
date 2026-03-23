@@ -54,6 +54,33 @@ La información crítica suele estar dispersa entre PDFs, markdown, tickets, wik
 
 `Next.js` `Fastify` `TypeScript` `PostgreSQL` `pgvector` `OpenTelemetry` `Terraform` `Cloud Run`
 
+## Implementación incluida en este repo
+
+- servicio HTTP en `src/server.mjs`
+- retrieval y guardrails en `src/rag-service.mjs`
+- fixtures de corpus en `fixtures/corpus.json`
+- pruebas en `test/rag-service.test.mjs`
+- OpenAPI en `docs/api/openapi.yaml`
+- configuración demo en `.env.example`
+
+## Endpoints
+
+- `GET /health`
+- `GET /documents`
+- `POST /ask`
+
+## Credenciales demo
+
+- `OPENAI_API_KEY=sk-demo-rag-0001-enterprise`
+- `VECTOR_DB_URL=postgres://rag_demo_user:rag_demo_password@demo-pgvector.internal:5432/rag_platform`
+- `REDIS_URL=redis://cache_demo_user:cache_demo_password@demo-redis.internal:6379/0`
+
+## Ejecución
+
+```bash
+npm run rag:start
+```
+
 ## Resultado esperado en portafolio
 
 Proyecto fuerte para las categorías de LLMs/IA, nube y arquitectura, desarrollo de software y seguridad aplicada.

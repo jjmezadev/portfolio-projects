@@ -1,0 +1,17 @@
+openapi: 3.1.0
+info:
+  title: Data Quality Observability API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /reports:
+    get:
+      summary: Generate current health report
+      responses:
+        '200':
+          description: Aggregated report with checks and anomalies

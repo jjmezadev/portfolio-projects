@@ -40,6 +40,32 @@ Los incidentes de datos se descubren tarde: dashboards rotos, reportes incorrect
 
 `TypeScript` `Next.js` `Airflow` `BigQuery` `PostgreSQL` `dbt` `Terraform` `Cloud Run`
 
+## Implementación incluida en este repo
+
+- servicio HTTP en `src/server.mjs`
+- rule engine y scoring en `src/quality-platform.mjs`
+- fixtures de tablas en `fixtures/sources.json`
+- pruebas en `test/quality-platform.test.mjs`
+- OpenAPI en `docs/api/openapi.yaml`
+- configuración demo en `.env.example`
+
+## Endpoints
+
+- `GET /health`
+- `GET /reports`
+
+## Credenciales demo
+
+- `POSTGRES_DSN=postgres://dq_demo_user:dq_demo_password@demo-postgres.internal:5432/data_quality`
+- `PAGERDUTY_ROUTING_KEY=pgr_demo_data_quality_0001`
+- `SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T000000/B000000/demo-data-quality`
+
+## Ejecución
+
+```bash
+npm run dataq:start
+```
+
 ## Resultado esperado en portafolio
 
 Proyecto ancla para ciencia de datos y datos end-to-end, con una narrativa fuerte de confiabilidad, operaciones y producto técnico.

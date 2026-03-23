@@ -1,0 +1,29 @@
+openapi: 3.1.0
+info:
+  title: LLM Process Agents API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /workflows:
+    get:
+      summary: List available workflows
+      responses:
+        '200':
+          description: Workflow catalog
+  /workflows/run/{workflowId}:
+    post:
+      summary: Run a workflow against a payload
+      parameters:
+        - name: workflowId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Workflow execution result

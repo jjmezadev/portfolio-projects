@@ -24,6 +24,7 @@ Desde la raíz del repo:
 - `npm run docproc:start`
 - `npm run gateway:start`
 - `npm run agents:start`
+- `docker compose up --build`
 
 Puertos por defecto:
 
@@ -116,3 +117,13 @@ Estructura esperada en GitHub:
 - `portfolio-projects/llm-process-agents`
 
 Los enlaces del sitio principal ya apuntan a esta estructura de monorepo.
+
+## Despliegue demo
+
+El repo incluye:
+
+- `docker-compose.yml` para levantar los cinco servicios juntos
+- `Dockerfile` por proyecto
+- `.env.example` por proyecto con credenciales ficticias consistentes
+- `docs/api/openapi.yaml` por proyecto
+- `docs/operations.md` por proyecto

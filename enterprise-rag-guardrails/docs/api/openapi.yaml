@@ -1,0 +1,33 @@
+openapi: 3.1.0
+info:
+  title: Enterprise RAG Guardrails API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /documents:
+    get:
+      summary: List indexed demo documents
+      responses:
+        '200':
+          description: Documents list
+  /ask:
+    post:
+      summary: Ask a grounded enterprise question
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [query]
+              properties:
+                query:
+                  type: string
+      responses:
+        '200':
+          description: Answer with citations and guardrail outcome

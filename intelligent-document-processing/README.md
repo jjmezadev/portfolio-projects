@@ -44,6 +44,33 @@ El procesamiento manual de facturas, contratos y formularios es costoso, lento y
 
 `Next.js` `TypeScript` `BullMQ` `Cloud Run` `GCS` `OpenAPI` `Vision OCR` `LLM structured outputs`
 
+## Implementación incluida en este repo
+
+- servicio HTTP en `src/server.mjs`
+- pipeline documental en `src/document-pipeline.mjs`
+- fixtures de ejemplo en `fixtures/sample-documents.json`
+- pruebas en `test/document-pipeline.test.mjs`
+- OpenAPI en `docs/api/openapi.yaml`
+- configuración demo en `.env.example`
+
+## Endpoints
+
+- `GET /health`
+- `GET /samples`
+- `POST /process`
+
+## Credenciales demo
+
+- `VISION_API_KEY=vision-demo-key-0001`
+- `QUEUE_URL=redis://docproc_queue_user:docproc_queue_password@demo-redis.internal:6379/1`
+- `ERP_WEBHOOK=https://sap-sandbox.example.invalid/api/documents`
+
+## Ejecución
+
+```bash
+npm run docproc:start
+```
+
 ## Resultado esperado en portafolio
 
 Proyecto puente entre IA aplicada y desarrollo de software, con demo visual clara y argumento comercial sólido.
