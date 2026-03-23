@@ -1,0 +1,24 @@
+{
+  "models": [
+    {
+      "modelId": "credit-risk-v3",
+      "owner": "risk-ml",
+      "baseline": { "auc": 0.89, "featureDrift": 0.08, "fairnessGap": 0.04 },
+      "current": { "auc": 0.78, "featureDrift": 0.27, "fairnessGap": 0.12 },
+      "segments": [
+        { "name": "general", "approvalRate": 0.62 },
+        { "name": "rural_customers", "approvalRate": 0.49 }
+      ]
+    },
+    {
+      "modelId": "churn-propensity-v2",
+      "owner": "growth-ml",
+      "baseline": { "auc": 0.81, "featureDrift": 0.06, "fairnessGap": 0.03 },
+      "current": { "auc": 0.8, "featureDrift": 0.09, "fairnessGap": 0.04 },
+      "segments": [
+        { "name": "general", "retentionOfferRate": 0.31 },
+        { "name": "enterprise", "retentionOfferRate": 0.33 }
+      ]
+    }
+  ]
+}

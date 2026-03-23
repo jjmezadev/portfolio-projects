@@ -1,0 +1,27 @@
+{
+  "blockedCards": ["4000000000009995"],
+  "blockedIps": ["203.0.113.77"],
+  "customerProfiles": [
+    {
+      "customerId": "cust-001",
+      "homeCountry": "CO",
+      "averageAmount": 180,
+      "velocityPerHour": 2,
+      "lastCountry": "CO",
+      "lastTransactionAt": "2026-03-23T11:20:00Z"
+    },
+    {
+      "customerId": "cust-002",
+      "homeCountry": "MX",
+      "averageAmount": 75,
+      "velocityPerHour": 1,
+      "lastCountry": "MX",
+      "lastTransactionAt": "2026-03-23T11:45:00Z"
+    }
+  ],
+  "rules": {
+    "reviewThreshold": 55,
+    "declineThreshold": 80,
+    "highRiskMerchants": ["CRYPTO", "GIFT_CARD", "WIRE_TRANSFER"]
+  }
+}

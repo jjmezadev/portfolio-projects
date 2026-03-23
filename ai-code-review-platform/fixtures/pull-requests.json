@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "securityPatterns": ["eval(", "child_process.exec", "innerHTML =", "SELECT * FROM "],
+    "performancePatterns": ["for (", ".map(", ".filter(", ".reduce("],
+    "testIndicators": [".test.", ".spec.", "__tests__"]
+  },
+  "samples": [
+    {
+      "id": "pr-100",
+      "title": "Add customer search endpoint",
+      "files": [
+        {
+          "path": "src/search.js",
+          "diff": "+ const html = userInput;\n+ element.innerHTML = html;\n+ const result = eval(customQuery);"
+        }
+      ]
+    }
+  ]
+}

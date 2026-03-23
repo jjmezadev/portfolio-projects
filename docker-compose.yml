@@ -38,3 +38,67 @@ services:
       - ./llm-process-agents/.env.example
     ports:
       - '4015:4015'
+
+  real-time-fraud-detection:
+    build:
+      context: ./real-time-fraud-detection
+    env_file:
+      - ./real-time-fraud-detection/.env.example
+    ports:
+      - '4016:4016'
+
+  ai-code-review-platform:
+    build:
+      context: ./ai-code-review-platform
+    env_file:
+      - ./ai-code-review-platform/.env.example
+    ports:
+      - '4017:4017'
+
+  multicloud-cost-optimizer:
+    build:
+      context: ./multicloud-cost-optimizer
+    env_file:
+      - ./multicloud-cost-optimizer/.env.example
+    ports:
+      - '4018:4018'
+
+  real-time-support-copilot:
+    build:
+      context: ./real-time-support-copilot
+    env_file:
+      - ./real-time-support-copilot/.env.example
+    ports:
+      - '4019:4019'
+
+  automated-compliance-audit:
+    build:
+      context: ./automated-compliance-audit
+    env_file:
+      - ./automated-compliance-audit/.env.example
+    ports:
+      - '4020:4020'
+
+  visual-etl-builder-ai:
+    build:
+      context: ./visual-etl-builder-ai
+    env_file:
+      - ./visual-etl-builder-ai/.env.example
+    ports:
+      - '4021:4021'
+
+  feature-flags-experimentation:
+    build:
+      context: ./feature-flags-experimentation
+    env_file:
+      - ./feature-flags-experimentation/.env.example
+    ports:
+      - '4022:4022'
+
+  ml-model-monitoring-platform:
+    build:
+      context: ./ml-model-monitoring-platform
+    env_file:
+      - ./ml-model-monitoring-platform/.env.example
+    ports:
+      - '4023:4023'

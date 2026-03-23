@@ -1,0 +1,18 @@
+{
+  "flags": [
+    {
+      "key": "checkout-redesign",
+      "rolloutPercentage": 50,
+      "targetSegments": ["beta", "enterprise"],
+      "variants": ["control", "variant_a"]
+    }
+  ],
+  "experiments": [
+    {
+      "id": "exp-001",
+      "name": "checkout copy test",
+      "control": { "exposures": 1000, "conversions": 84 },
+      "variant": { "exposures": 980, "conversions": 108 }
+    }
+  ]
+}

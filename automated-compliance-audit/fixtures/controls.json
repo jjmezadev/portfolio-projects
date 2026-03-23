@@ -1,0 +1,34 @@
+{
+  "controls": [
+    {
+      "id": "AC-01",
+      "framework": "SOC2",
+      "owner": "security",
+      "description": "Privileged access reviews completed monthly.",
+      "evidenceFreshnessDays": 12,
+      "maxFreshnessDays": 30,
+      "status": "pass",
+      "exceptions": 0
+    },
+    {
+      "id": "CC-07",
+      "framework": "SOC2",
+      "owner": "platform",
+      "description": "Critical production changes require approval.",
+      "evidenceFreshnessDays": 43,
+      "maxFreshnessDays": 15,
+      "status": "fail",
+      "exceptions": 2
+    },
+    {
+      "id": "GDPR-12",
+      "framework": "GDPR",
+      "owner": "privacy",
+      "description": "Third-party processors are reviewed quarterly.",
+      "evidenceFreshnessDays": 20,
+      "maxFreshnessDays": 90,
+      "status": "pass",
+      "exceptions": 1
+    }
+  ]
+}

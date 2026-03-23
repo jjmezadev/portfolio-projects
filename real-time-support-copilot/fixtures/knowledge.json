@@ -1,0 +1,24 @@
+{
+  "customers": [
+    {
+      "customerId": "cust-acme",
+      "name": "Acme Logistics",
+      "tier": "enterprise",
+      "openTickets": 2,
+      "recentIssue": "payment API 503 in Bogota",
+      "preferredLanguage": "es"
+    }
+  ],
+  "articles": [
+    {
+      "id": "KB-503-payments",
+      "title": "Troubleshooting payment API 503 spikes",
+      "content": "If payment API returns 503 in one region, verify upstream gateway saturation, recent deploys, and retry headers. Escalate to payments on-call if enterprise customer impact exceeds 10 minutes."
+    },
+    {
+      "id": "KB-refund-policy",
+      "title": "Refund policy for delayed payments",
+      "content": "Refund requests above 500 USD require operations approval and account notes before confirmation to the customer."
+    }
+  ]
+}

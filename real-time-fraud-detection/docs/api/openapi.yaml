@@ -1,0 +1,41 @@
+openapi: 3.1.0
+info:
+  title: Real-Time Fraud Detection API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /profiles:
+    get:
+      summary: List customer risk profiles
+      responses:
+        '200':
+          description: Demo customer profiles
+  /score:
+    post:
+      summary: Score a transaction for fraud risk
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [customerId, amount, country, cardNumber, ipAddress]
+              properties:
+                customerId:
+                  type: string
+                amount:
+                  type: number
+                country:
+                  type: string
+                cardNumber:
+                  type: string
+                ipAddress:
+                  type: string
+      responses:
+        '200':
+          description: Fraud decision with signals and actions

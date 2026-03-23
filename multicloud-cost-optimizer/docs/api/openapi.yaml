@@ -1,0 +1,23 @@
+openapi: 3.1.0
+info:
+  title: Multi-Cloud Cost Optimizer API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /accounts:
+    get:
+      summary: List demo accounts and resources
+      responses:
+        '200':
+          description: Cloud accounts catalog
+  /optimize:
+    get:
+      summary: Generate optimization recommendations
+      responses:
+        '200':
+          description: Prioritized savings opportunities

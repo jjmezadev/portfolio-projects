@@ -9,6 +9,14 @@
     "dataq:start": "node data-quality-observability/src/server.mjs",
     "docproc:start": "node intelligent-document-processing/src/server.mjs",
     "gateway:start": "node multitenant-api-analytics/src/server.mjs",
-    "agents:start": "node llm-process-agents/src/server.mjs"
+    "agents:start": "node llm-process-agents/src/server.mjs",
+    "fraud:start": "node real-time-fraud-detection/src/server.mjs",
+    "codereview:start": "node ai-code-review-platform/src/server.mjs",
+    "finops:start": "node multicloud-cost-optimizer/src/server.mjs",
+    "support:start": "node real-time-support-copilot/src/server.mjs",
+    "compliance:start": "node automated-compliance-audit/src/server.mjs",
+    "etl:start": "node visual-etl-builder-ai/src/server.mjs",
+    "flags:start": "node feature-flags-experimentation/src/server.mjs",
+    "mlmon:start": "node ml-model-monitoring-platform/src/server.mjs"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "accounts": [
+    {
+      "accountId": "aws-prod-001",
+      "provider": "aws",
+      "owner": "platform-finops",
+      "monthlyCost": 18400,
+      "resources": [
+        { "name": "ec2-api-a", "type": "compute", "utilization": 0.18, "monthlyCost": 2600, "commitmentCoverage": 0.2 },
+        { "name": "rds-orders", "type": "database", "utilization": 0.65, "monthlyCost": 3400, "commitmentCoverage": 0.5 },
+        { "name": "s3-archive-logs", "type": "storage", "utilization": 0.92, "monthlyCost": 1200, "commitmentCoverage": 1 }
+      ]
+    },
+    {
+      "accountId": "gcp-analytics-002",
+      "provider": "gcp",
+      "owner": "data-platform",
+      "monthlyCost": 12900,
+      "resources": [
+        { "name": "gke-batch", "type": "compute", "utilization": 0.24, "monthlyCost": 4100, "commitmentCoverage": 0.1 },
+        { "name": "bigquery-marketing", "type": "warehouse", "utilization": 0.58, "monthlyCost": 3700, "commitmentCoverage": 0 },
+        { "name": "cloudsql-bi", "type": "database", "utilization": 0.33, "monthlyCost": 2400, "commitmentCoverage": 0.2 }
+      ]
+    }
+  ]
+}

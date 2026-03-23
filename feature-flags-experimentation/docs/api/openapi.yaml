@@ -1,0 +1,41 @@
+openapi: 3.1.0
+info:
+  title: Feature Flags Experimentation API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /flags:
+    get:
+      summary: List feature flags
+      responses:
+        '200':
+          description: Flag catalog
+  /evaluate:
+    post:
+      summary: Evaluate a feature flag for a user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Evaluation result with variant and reason
+  /experiments/{experimentId}:
+    get:
+      summary: Analyze an experiment result
+      parameters:
+        - in: path
+          name: experimentId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Experiment metrics and winner

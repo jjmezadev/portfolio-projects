@@ -1,0 +1,14 @@
+{
+  "templates": [
+    {
+      "id": "pipeline-orders-001",
+      "name": "orders_daily_rollup",
+      "sourceTable": "raw_orders",
+      "steps": [
+        { "type": "filter", "condition": "status = 'paid'" },
+        { "type": "aggregate", "groupBy": ["country"], "metrics": ["COUNT(*) AS order_count", "SUM(total_amount) AS gross_amount"] }
+      ],
+      "destinationTable": "analytics_orders_daily"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+openapi: 3.1.0
+info:
+  title: ML Model Monitoring Platform API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /models:
+    get:
+      summary: List monitored models
+      responses:
+        '200':
+          description: Model catalog
+  /report:
+    get:
+      summary: Generate monitoring report
+      responses:
+        '200':
+          description: Drift, fairness, and health analysis

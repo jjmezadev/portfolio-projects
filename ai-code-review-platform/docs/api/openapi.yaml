@@ -1,0 +1,37 @@
+openapi: 3.1.0
+info:
+  title: AI Code Review Platform API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /samples:
+    get:
+      summary: List demo pull requests
+      responses:
+        '200':
+          description: Demo pull request fixtures
+  /review:
+    post:
+      summary: Review a pull request payload
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [files]
+              properties:
+                id:
+                  type: string
+                files:
+                  type: array
+                  items:
+                    type: object
+      responses:
+        '200':
+          description: Findings, score, and merge recommendation

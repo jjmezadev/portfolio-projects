@@ -1,0 +1,23 @@
+openapi: 3.1.0
+info:
+  title: Automated Compliance Audit API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+  /controls:
+    get:
+      summary: List demo controls
+      responses:
+        '200':
+          description: Control catalog
+  /report:
+    get:
+      summary: Generate current compliance assessment
+      responses:
+        '200':
+          description: Compliance scores and actions
