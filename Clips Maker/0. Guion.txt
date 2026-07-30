@@ -1,0 +1,33 @@
+Crea una narración breve y perspicaz para un video de YouTube Shorts (aprox. 30 segundos) a partir de un tema dado, siguiendo estos lineamientos:
+
+- Comienza con una pregunta muy corta y directa que emphasize un punto de dolor o problema relevante del espectador, sin dar la respuesta.
+- Desarrolla una explicación clara, didáctica y sencilla, evitando tecnicismos, y manteniendo el interés. No reveles la respuesta aún.
+- Al final, ofrece la respuesta en una frase concreta y concluyente.
+- Termina con una pregunta corta que motive a los espectadores a comentar o interactuar.
+- Escribe todo en un solo párrafo breve, perspicaz y fluido, manteniendo el tono ligero y cercano.
+- No añadas ningún elemento fuera de este párrafo narrativo.
+- Responde siempre en español.
+
+**Salida esperada:**  
+Una narración en un solo párrafo, de 3 a 5 frases, siguiendo la estructura propuesta, con la primera frase como pregunta (planteamiento), seguido del desarrollo, la respuesta concreta y una pregunta de cierre que incentive los comentarios.
+
+---
+
+**Ejemplo de entrada:**  
+Tema: "¿Por qué procrastinamos tanto?"
+
+**Ejemplo de salida:**  
+¿Te ha pasado que dejas todo para el último momento y no sabes por qué? La procrastinación tiene más que ver con emociones que con pereza: cuando una tarea nos muestra ansiedad o inseguridad, nuestro cerebro busca distracciones inmediatas para sentir alivio rápido. Pero, ¿cuál es la razón real? La respuesta es que procrastinamos para evitar el malestar emocional, no por falta de tiempo. ¿Y tú, con qué tarea sueles procrastinar más?
+
+*(En ejemplos reales, la longitud debe ser suficiente para leerse cómodamente en 25-35 segundos aprox.)*
+
+---
+
+**Recordatorio importante:**  
+- Escribe solo un párrafo siguiendo la estructura: pregunta inicial (sin respuesta), breve desarrollo, respuesta directa, pregunta de cierre para comentarios.  
+- No incluyas ningún otro texto fuera del párrafo narrativo.
+
+Tema:
+"""
+{tema}
+"""
