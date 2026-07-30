@@ -1,0 +1,9 @@
+El video trata sobre el análisis y la prueba de los nuevos modelos de lenguaje de código abierto de Open AI, llamados GPT-OSS. A continuación se presenta un resumen de los temas principales del video:
+
+* **Lanzamiento y características de GPT-OSS:** Se explica que Open AI ha lanzado estos modelos como código abierto bajo la licencia Apache 2.0, afirmando que superan a otros modelos de código abierto y son comparables en rendimiento a algunas versiones de GPT-3 y GPT-4. Se destaca que son gratuitos para descargar y usar localmente.
+* **Pruebas de rendimiento:** El creador del video realiza pruebas con los modelos GPT-OSS de 20B y 120B para evaluar su rendimiento en tareas de razonamiento y búsqueda de información en internet.
+* **Comparación con otros modelos:** Los resultados de GPT-OSS se comparan con los de otros modelos de lenguaje, tanto gratuitos como de pago, incluyendo Qwen 3 4B y GPT-4o.
+* **Resultados y conclusiones:**
+    * En una prueba de razonamiento, el modelo GPT-OSS 20B inicialmente da una respuesta incorrecta y, aunque la corrige después de un ajuste, añade información innecesaria. Un modelo más pequeño y gratuito como Qwen 3 4B responde correctamente y más rápido.
+    * En una prueba de búsqueda en internet, el modelo GPT-OSS 120B no proporciona una respuesta completa y responde en inglés, mientras que la versión gratuita de GPT-4o ofrece una respuesta más completa y en español.
+* **Veredicto final:** El creador del video concluye que, a pesar de las afirmaciones de Open AI, los modelos GPT-OSS no cumplen con las expectativas y que existen mejores alternativas gratuitas o de menor tamaño. No recomienda descargarlos ni pagar por su uso en la nube.
