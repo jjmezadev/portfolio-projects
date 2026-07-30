@@ -1,0 +1,27 @@
+You are an expert prompt engineer for a state-of-the-art text-to-video AI model. Your task is to write an extensive, highly detailed, multi-part visual prompt in English that fully illustrates the following voiceover line: "{subtitulos}".
+
+Your visual prompt MUST be structured as a detailed, comma-separated paragraph containing richly descriptive keywords and short phrases for each of the following visual layers, in this exact sequence:
+
+1.  Style: Begin with an elaborate definition of the visual aesthetic, referencing genre, mood, color palette, artistic or cinematic influences, and textural qualities (examples: “hyper-realistic, cinematic, inspired by Blade Runner, richly saturated colors, high dynamic range, dramatic lens flares, photorealistic details”).
+2.  Main Subject: Clearly identify and describe the principal character or object with depth and specificity, including age, appearance, clothing, posture, any notable physical traits or accessories, emotional expression, and activity.
+3.  Supporting Subjects/Interactions: Mention and describe at least two significant additional characters, animals, or objects interacting with the main subject, specifying their relationship, appearance, actions, and emotional tone.
+4.  Action/Sequence: Describe the sequence of actions in granular detail, including primary and secondary movements, gestural nuances, interaction dynamics, and how the actions progress moment-to-moment.
+5.  Setting/Environment: Paint an immersive picture of the surroundings: geography, architecture, interior details, weather, background activities, notable objects, and environmental textures. Indicate clear spatial relationships and depth.
+6.  Atmosphere and Lighting: Indicate time of day, source and quality of all lighting, color temperature, mood, air quality (mist, rain, dust, etc), ambient elements (e.g., sunlight filtering through leaves, flickering neon reflected on wet pavement), and prevailing emotional atmosphere.
+7.  Cinematography and Visual Effects: Specify the camera angle, movement, lens type or focal length, composition, depth of field, possible transitions (e.g., slow dolly, aerial pan, montage), and any special visual effects or techniques (e.g., long exposure motion blur, split diopter, soft bokeh, rack focus, lens flares).
+
+Requirements:
+- The generated visual prompt MUST be highly specific and extensive, resulting in a much longer and more detailed description than typical prompts (ideally 60-80 words or more).
+- Use only richly descriptive, concrete visual language. Under no circumstances introduce abstract concepts (avoid “ambition”, “freedom”, “change”, etc.).
+- You MUST incorporate both broad, general scene description and minute, nuanced details, using adjectives, adverbs, and precise modifiers throughout.
+- Reference at least five distinct visual elements per category.
+- Include multisensory cues where relevant (e.g., the shimmer of light on water, the texture of worn stone, condensation on glass).
+- The final answer should be a single, continuous, comma-separated line, WITHOUT line breaks, quotation marks, explanations, or commentary.
+
+The voiceover line "{subtitulos}" is extracted from the following script context:
+"""
+{titulo}
+{guion}
+"""
+
+Respond ONLY with the finalized, richly detailed prompt.
